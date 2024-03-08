@@ -60,7 +60,7 @@ function addIfEven(num) {
 
 // ESERCIZIO 3
 function loopToFive() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i <= 5; i++) {
         console.log(i);
     }
 }
@@ -79,20 +79,44 @@ function loopToFive() {
 
     3- Sono presenti errori logici?
         // ESERCIZIO 3
-        no
+        si, invece di essere solo <, deve avere ll'uguale <= in questo modo il ciclo arriva a 5
 
 */
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 function displayEvenNumbers() {
+    debugger;
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
-        if (numbers % 2 = 0); {
-            evenNumbers.push(i);
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
         }
-        return evenNumbers;
     }
+    return evenNumbers;
 }
 displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+
+console.log(displayEvenNumbers())
+
+/*
+    1- Che cosa fa questo codice?
+
+        // ESERCIZIO 4
+        il codice fornito è una funzione la quale ha un array di numeri, un array vouto e un ciclo. Quest'ultimo attraverso un ciclo che parte da i = 0, analizza tutti gli elementi degli array, e trova quelli pari. Infine i numeri pari vengono inseriti nell'array vuoto.
+        La funzione serve ad eseguire blocchi di codice che possono essere riutilizzati in vari punti del programma richiamando la funzione.
+
+     2- Sono presenti errori di sintassi?
+
+        // ESERCIZIO 4
+        si, il punto e virgola dopo if
+
+    3- Sono presenti errori logici?
+        // ESERCIZIO 4
+        si, la condizione .lenght-1 è sbagliata, è giusto scrivere .lenght senza il -1 per garantire che il ciclo avvenga su tutti gli elementi dell'array.
+        All'interno di if, si tenta di confrontare l'intero array numbers, invece di confrontare l'elemento corrente dell'array, cioè numbers[i].
+        La posizione di return è sbagliata perchè se inserito all'interno del ciclo, il ciclo si interrompe e non prosegue. Va messo fuori
+        evenNumbers.push(i) è sbagliato perchè l'array evenNumbers dovrebbe contenere i numeri pari, non gli indici i.
+
+*/
