@@ -33,11 +33,28 @@ for (let i = 0; i <= 5; i++) {
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    if (num % 2 === 0) {
         return num + 5;
     }
     return num;
 }
+
+/*
+    1- Che cosa fa questo codice?
+
+        // ESERCIZIO 2
+        il codice fornito è una funzione la quale vuole calcolare se il numero che abbiamo è pari. Se il numero è pari allora lo restituisce sommando 5 alla cifra iniziale, altrimenti se è dispari restituisce il numero senza alcuna somma.
+
+     2- Sono presenti errori di sintassi?
+
+        // ESERCIZIO 2
+        no
+
+    3- Sono presenti errori logici?
+        // ESERCIZIO 1
+        si, all'interno della condizione di if, soltanto un = è sbagliato perchè noi dobbiamo confrontare più valori. === confronta, il valore, e il tipo (se è una stringa, un numero...)
+
+*/
 
 
 // ESERCIZIO 3
