@@ -44,6 +44,7 @@ function addIfEven(num) {
 
         // ESERCIZIO 2
         il codice fornito è una funzione la quale vuole calcolare se il numero che abbiamo è pari. Se il numero è pari allora lo restituisce sommando 5 alla cifra iniziale, altrimenti se è dispari restituisce il numero senza alcuna somma.
+        La funzione serve ad eseguire blocchi di codice che possono essere riutilizzati in vari punti del programma richiamando la funzione.
 
      2- Sono presenti errori di sintassi?
 
@@ -59,10 +60,28 @@ function addIfEven(num) {
 
 // ESERCIZIO 3
 function loopToFive() {
-    for (let i = 0, i < 5, i++) {
+    for (let i = 0; i < 5; i++) {
         console.log(i);
     }
 }
+
+/*
+    1- Che cosa fa questo codice?
+
+        // ESERCIZIO 3
+        il codice fornito è una funzione la quale realizza un cilclo fino a quando la seconda condizione non resulterà falsa. Dandogli come condizione iniziale la variabile let i = 0, la seconda condizione sarà i < 5, essa conntrollerà se il valore i è inferiore a 5, i++ incrementa il valore di i a ogni ciclo. Quando il valore di ì non sarà più inferiore a 5 il ciclo termina.
+        La funzione serve ad eseguire blocchi di codice che possono essere riutilizzati in vari punti del programma richiamando la funzione.
+
+     2- Sono presenti errori di sintassi?
+
+        // ESERCIZIO 3
+        si, le virgole sono sbagliate
+
+    3- Sono presenti errori logici?
+        // ESERCIZIO 3
+        no
+
+*/
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
