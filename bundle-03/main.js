@@ -56,7 +56,7 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,14 +64,14 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+    auto.type.toLowerCase() === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type.toLowerCase() !== 'benzina' && auto.type !== 'diesel';
 });
 
 console.log('Auto a benzina');
@@ -83,4 +83,9 @@ console.log('*******************************');
 console.log(dieselCars);
 
 console.log('Tutte le altre auto');
+console.log('*******************************');
 console.log(otherCars);
+
+// errore di sintassi a riga 67 >=
+// alcune parole sono scritte con la maiuscola e altre con la minuscola: .toLowerCase() per farle diventare utte minuscole
+// errore di logica a riga 74: || non va bene, dobbiamo usare &&

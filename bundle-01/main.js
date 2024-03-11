@@ -39,6 +39,8 @@ function addIfEven(num) {
     return num;
 }
 
+addIfEven(num);
+
 /*
     1- Che cosa fa questo codice?
 
@@ -53,7 +55,8 @@ function addIfEven(num) {
 
     3- Sono presenti errori logici?
         // ESERCIZIO 1
-        si, all'interno della condizione di if, soltanto un = è sbagliato perchè noi dobbiamo confrontare più valori. === confronta, il valore, e il tipo (se è una stringa, un numero...)
+        si, all'interno della condizione di if, soltanto un = è sbagliato perchè noi dobbiamo confrontare più valori. === confronta, il valore, e il tipo (se è una stringa, un numero...).
+        non viene richiamata
 
 */
 
@@ -64,6 +67,8 @@ function loopToFive() {
         console.log(i);
     }
 }
+
+loopToFive();
 
 /*
     1- Che cosa fa questo codice?
@@ -79,7 +84,8 @@ function loopToFive() {
 
     3- Sono presenti errori logici?
         // ESERCIZIO 3
-        si, invece di essere solo <, deve avere ll'uguale <= in questo modo il ciclo arriva a 5
+        si, invece di essere solo <, deve avere ll'uguale <= in questo modo il ciclo arriva a 5.
+        non viene richiamata
 
 */
 
